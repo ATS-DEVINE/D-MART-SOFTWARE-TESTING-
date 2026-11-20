@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="D-Mart E-Commerce Test Suite" parallel="tests" thread-count="3">
+
+    <parameter name="browser" value="chrome"/>
+
+    <listeners>
+        <listener class-name="com.dmart.testing.utils.ExtentReportListener"/>
+    </listeners>
+
+    <!-- Authentication Tests -->
+    <test name="Authentication Tests">
+        <classes>
+            <class name="com.dmart.testing.tests.AuthenticationTests"/>
+        </classes>
+    </test>
+
+    <!-- Product Browsing Tests -->
+    <test name="Product Browsing Tests">
+        <classes>
+            <class name="com.dmart.testing.tests.ProductBrowsingTests"/>
+        </classes>
+    </test>
+
+    <!-- Shopping Cart Tests -->
+    <test name="Shopping Cart Tests">
+        <classes>
+            <class name="com.dmart.testing.tests.ShoppingCartTests"/>
+        </classes>
+    </test>
+
+    <!-- Checkout Tests -->
+    <test name="Checkout Tests">
+        <classes>
+            <class name="com.dmart.testing.tests.CheckoutTests"/>
+        </classes>
+    </test>
+
+    <!-- User Profile Tests -->
+    <test name="User Profile Tests">
+        <classes>
+            <class name="com.dmart.testing.tests.UserProfileTests"/>
+        </classes>
+    </test>
+
+    <!-- Seller Dashboard Tests -->
+    <test name="Seller Dashboard Tests">
+        <classes>
+            <class name="com.dmart.testing.tests.SellerDashboardTests"/>
+        </classes>
+    </test>
+
+    <!-- Admin Dashboard Tests -->
+    <test name="Admin Dashboard Tests">
+        <classes>
+            <class name="com.dmart.testing.tests.AdminDashboardTests"/>
+        </classes>
+    </test>
+
+    <!-- Edge Case Tests -->
+    <test name="Edge Case Tests">
+        <classes>
+            <class name="com.dmart.testing.tests.EdgeCaseTests"/>
+        </classes>
+    </test>
+
+</suite>
